@@ -20,3 +20,7 @@ y = data["Price"].values
 #actual prices
 print("***************")
 print("Testing Results")
+
+
+
+#use 24 miles(000)

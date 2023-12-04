@@ -13,6 +13,7 @@ x = data["Age"].values
 y = data["Blood Pressure"].values
 
 # Create your training and testing datasets:
+xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .2)
 
 # Use reshape to turn the x values into 2D arrays:
 xtrain = xtrain.reshape(-1,1)
