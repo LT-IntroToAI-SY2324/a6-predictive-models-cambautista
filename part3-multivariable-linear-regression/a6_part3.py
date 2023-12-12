@@ -34,11 +34,12 @@ predict=np.around(predictions , 2)
 print(predict)
 
 for index in range(len(xtest)):
-    actual = round(ytest[index])
+    actual = (ytest[index])
     predicted_y = predict[index] 
     x_coord = xtest[index]
-    x_coord=np.around(x_coord,2)
-    
+    x_coord=np(x_coord,2)
     print(f"miles: {x_coord[0]} age: {x_coord[1]} Actual: {actual} Predicted: {predicted_y}")
-print(f"miles: {x_coord[89]} age: {x_coord[10]} Actual: {actual} Predicted: {predicted_y}")
-print(f"miles: {x_coord[150]} age: {x_coord[20]} Actual: {actual} Predicted: {predicted_y}")
+
+my_cars=[89,10], [150,20]
+my_predications= model.predict(my_cars)
+print(my_predications)
