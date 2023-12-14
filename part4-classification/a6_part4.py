@@ -10,18 +10,34 @@ x = data[["Age", "EstimatedSalary", "Gender"]].values
 y = data["Purchased"].values
 
 # Step 1: Print the values for x and y
-
+print(x)
+print(y)
 # Step 2: Standardize the data using StandardScaler, 
+scaler = StandardScaler().fit(x)
 
 # Step 3: Transform the data
+x = scaler.transform(x)
 
 # Step 4: Split the data into training and testing data
+x_train, x_test, y_train, y_test = train_test_split(x, y)
 
 # Step 5: Fit the data
 
 # Step 6: Create a LogsiticRegression object and fit the data
+model= linear_model.LogisticRegression().fit(x_train, y_train)
+
 
 # Step 7: Print the score to see the accuracy of the model
-
+print("Accuracy:", model.score(x_test, y_test))
 # Step 8: Print out the actual ytest values and predicted y values
 # based on the xtest data
+print("real Y values:")
+print(y_test)
+print("predicted Y values:")
+print(model.predict(x_test))
+print(len(y_test))
+f34 = [["34", "56000", "1"]]
+f34=scaler.transform(f34)
+my_prediction=model.predict(f34)
+print(my_prediction) 
+   
