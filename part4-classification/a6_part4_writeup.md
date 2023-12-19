@@ -17,4 +17,4 @@ The model did pretty well. When looking at the predicted and actual results, mos
 
 4. Would a 34 year old Female who makes 56000 a year buy an SUV according to the model? Remember to scale the data before running it through the model.
 
-No, she would not. (0)
+No, she would not. (0) 
